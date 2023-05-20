@@ -1,14 +1,5 @@
 /*--------------------------------------------
 
-    Template Name: srtdash - Bootstrap 4 Admin and Ui Kit
-    Template URI: http://tf.itech-theme.com/srtdash-preview
-    Description: This is Bootstrap 4 Admin Template and Ui Kit
-    Author: cdibrandstudio
-    Author https://themeforest.net/user/cdibrandstudio
-    Version: 1.0
-
-----------------------------------------------
-    
     CSS INDEX
     ===================
   
@@ -108,7 +99,7 @@
   height: 100vh;
   width: 280px;
   overflow: hidden;
-  background: #494e45;
+  background: #607d3b;
   box-shadow: 2px 0 32px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -155,8 +146,8 @@
 .metismenu li a {
   position: relative;
   display: block;
-  color: #8d97ad;
-  font-size: 15px;
+  color: #ffffff;
+  font-size: 17px;
   text-transform: capitalize;
   padding: 15px 15px;
   letter-spacing: 0;
@@ -164,7 +155,7 @@
 }
 
 .metismenu li a i {
-  color: #6a56a5;
+  color: #000000;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -393,7 +384,7 @@
 
 .header-area {
   padding: 15px 30px;
-  background: #fff;
+  background: #607d3b;
   border-bottom: 1px solid #d8e3e7;
 }
 
@@ -647,7 +638,7 @@
 
 .page-title-area {
   padding: 0 30px;
-  background: #e5eff1;
+  background: #fcfbfc;
   position: relative;
 }
 
@@ -714,8 +705,7 @@ ul.breadcrumbs {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: -webkit-linear-gradient(left, #7af09d 0%, #69f88d 100%);
-  background: linear-gradient(to right, #76d5db 0%, #75dabb 100%);
+  background: #607d3b;
   padding: 17px 38px;
   position: relative;
   border-radius: 10px;
@@ -787,8 +777,8 @@ ul.breadcrumbs {
 }
 
 .user-profile .dropdown-menu a {
-  font-size: 15px;
-  color: #a5e9b9;
+  font-size: 18px;
+  color: #000;
   letter-spacing: 0;
   font-weight: 500;
   padding: 4px 120px;
