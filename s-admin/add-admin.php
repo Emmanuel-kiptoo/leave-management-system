@@ -23,7 +23,7 @@
     $query->execute();
     $lastInsertId = $dbh->lastInsertId();
     if($lastInsertId){
-    $msg="New admis has been added Successfully";
+    $msg="New sadmins has been added Successfully";
     } else {
     $error="ERROR";
     }

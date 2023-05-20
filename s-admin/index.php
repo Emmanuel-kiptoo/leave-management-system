@@ -5,7 +5,7 @@
 
     $uname=$_POST['username'];
     $password=md5($_POST['password']);
-    $sql ="SELECT UserName,Password FROM admin WHERE UserName=:uname and Password=:password";
+    $sql ="SELECT UserName,Password FROM sadmin WHERE UserName=:uname and Password=:password";
     $query= $dbh -> prepare($sql);
     $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
     $query-> bindParam(':password', $password, PDO::PARAM_STR);
@@ -62,7 +62,7 @@
             <div class="login-box ptb--100">
                 <form name="signin" method="POST">
                     <div class="login-form-head">
-                        <h4>ADMIN SECTION</h4>
+                        <h4>SUPER ADMIN</h4>
                         <p>Fauzi Leave Management System</p>
                     </div>
                     <div class="login-form-body">

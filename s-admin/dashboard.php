@@ -48,7 +48,7 @@
                 <div class="menu-inner">
                     <?php
                         $page='dashboard';
-                        include '../includes/admin-sidebar.php';
+                        include '../includes/s-admin-sidebar.php';
                     ?>
                 </div>
             </div>

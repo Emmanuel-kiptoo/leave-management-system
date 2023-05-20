@@ -60,14 +60,8 @@
         <!-- sidebar menu area start -->
         <div class="sidebar-menu">
             
-            <div class="main-menu">
-                <div class="menu-inner">
-                    <?php
-                        $page='manage-admin';
-                        include '../includes/admin-sidebar.php';
-                    ?>
-                </div>
-            </div>
+           
+        
         </div>
         <!-- sidebar menu area end -->
         <!-- main content area start -->
