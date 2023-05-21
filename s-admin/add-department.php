@@ -78,7 +78,7 @@
                 <div class="menu-inner">
                     <?php
                         $page='department';
-                        include '../includes/admin-sidebar.php';
+                        include '../includes/s-admin-sidebar.php';
                     ?>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     <div class="col-sm-6 clearfix">
                         <div class="user-profile pull-right">
                             <img class="avatar user-thumb" src="../assets/images/admin.png" alt="avatar">
-                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">ADMIN <i class="fa fa-angle-down"></i></h4>
+                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">SUPER ADMIN <i class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="logout.php">Log Out</a>
                             </div>

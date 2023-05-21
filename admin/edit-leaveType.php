@@ -65,11 +65,7 @@
     <div class="page-container">
         <!-- sidebar menu area start -->
         <div class="sidebar-menu">
-            <div class="sidebar-header">
-                <div class="logo">
-                    <a href="dashboard.php"><img src="../assets/images/icon/logo.png" alt="logo"></a>
-                </div>
-            </div>
+             
             <div class="main-menu">
                 <div class="menu-inner">
                     <?php
