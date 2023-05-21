@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2023 at 02:39 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: May 21, 2023 at 09:23 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,9 +41,35 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `UserName`, `Password`, `fullname`, `email`, `updationDate`) VALUES
-(1, 'admin', 'd00f5d5217896fb7fd601412cb890830', 'Fauzia Moha', 'admin@mail.com', '2023-05-01 15:15:46'),
-(2, 'bruno', '5f4dcc3b5aa765d61d8327deb882cf99', 'Bruno Den', 'itsbruno@mail.com', '2023-05-02 15:15:50'),
-(3, 'greenwood', '5f4dcc3b5aa765d61d8327deb882cf99', 'Johnny Greenwood', 'greenwood@mail.com', '2023-05-09 15:15:54');
+(4, 'Fauzia', '202cb962ac59075b964b07152d234b70', 'Fauzia Moha', 'fauzia@gmail.com', '2023-05-20 17:24:29'),
+(5, 'as', '202cb962ac59075b964b07152d234b70', 'ssdd', 'add@gmail.com', '2023-05-20 17:31:08'),
+(6, 'dh', '202cb962ac59075b964b07152d234b70', 'dfgh', 'gh@gmail.com', '2023-05-20 20:02:38'),
+(7, 'Kimani', '202cb962ac59075b964b07152d234b70', 'Kimani Steven', 'kimanisteve@gmail.com', '2023-05-21 06:59:37');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sadmin`
+--
+
+CREATE TABLE `sadmin` (
+  `id` int(11) NOT NULL,
+  `UserName` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL,
+  `fullname` varchar(255) NOT NULL,
+  `email` varchar(55) NOT NULL,
+  `updationDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `sadmin`
+--
+
+INSERT INTO `sadmin` (`id`, `UserName`, `Password`, `fullname`, `email`, `updationDate`) VALUES
+(1, 'admin', 'd00f5d5217896fb7fd601412cb890830', 'Fauzia Moha', 'admin@mail.com', '2023-05-01 12:15:46'),
+(2, 'bruno', '5f4dcc3b5aa765d61d8327deb882cf99', 'Bruno Den', 'itsbruno@mail.com', '2023-05-02 12:15:50'),
+(3, 'greenwood', '5f4dcc3b5aa765d61d8327deb882cf99', 'Johnny Greenwood', 'greenwood@mail.com', '2023-05-09 12:15:54'),
+(0, 'Fauz', '202cb962ac59075b964b07152d234b70', 'fauz', 'fauz@gmail.com', '2023-05-20 17:29:50');
 
 -- --------------------------------------------------------
 
@@ -109,7 +135,8 @@ INSERT INTO `tblemployees` (`id`, `EmpId`, `FirstName`, `LastName`, `EmailId`, `
 (5, 'ASTR001439', 'Danny', 'kibet', 'danny@mail.com', 'b7bee6b36bd35b773132d4e3a74c2bb5', 'Male', '1986-03-12', 'Research', 'kenyatta', 'Nairobi', 'Kenya', '0757777744', 1, '2023-05-01 17:14:48'),
 (6, 'ASTR006946', 'Fatuma', 'Nabulo', 'fatuma@mail.com', 'a3cceba83235dc95f750108d22c14731', 'Female', '1992-08-28', 'Finance', 'kigali', 'kigali', 'Rwanda', '8520259670', 1, '2023-05-02 17:46:02'),
 (7, 'ASTR000084', 'Jennifer', 'onsongo', 'jennifer@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Female', '1992-12-11', 'Marketing', 'moi Avenue', 'kisii', 'Kenya', '074012566h', 1, '2023-05-01 15:29:00'),
-(8, 'ASTR012447', 'Will', 'Williams', 'williams@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Male', '1992-02-15', 'Research', 'kangundo', 'embakasi', 'Kenya', '0785400000', 1, '2023-05-02 15:52:32');
+(8, 'ASTR012447', 'Will', 'Williams', 'williams@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Male', '1992-02-15', 'Research', 'kangundo', 'embakasi', 'Kenya', '0785400000', 1, '2023-05-02 15:52:32'),
+(9, 'AST105617', 'Rose', 'Nyamato', 'rosenyamato@gmail.com', '202cb962ac59075b964b07152d234b70', 'Female', '2023-05-21', 'Operations', '03-1000', 'Nairobi', 'Kenya', '0767890765', 1, '2023-05-21 07:07:25');
 
 -- --------------------------------------------------------
 
@@ -144,7 +171,8 @@ INSERT INTO `tblleaves` (`id`, `LeaveType`, `ToDate`, `FromDate`, `Description`,
 (12, 'Casual Leave', '02/02/2023', '03/03/2023', 'This is a demo description for testing purpose', '2023-05-03 08:11:11', 'A demo Admin Remarks for Testing!', '2023-05-03 13:42:05 ', 1, 1, 1),
 (15, 'Casual Leave', '2023-03-15', '2023-03-05', 'None, Testing', '2023-03-02 09:32:42', 'casual leave not allowed for a week, the company\'s gotta huge project which should be completed within this week.', '2023-03-03 11:47:33 ', 2, 1, 1),
 (18, 'Medical Leave', '2023-03-04', '2023-03-05', 'i\'ve to go for my body checkup. got an appointment for tommorow', '2023-03-03 12:09:44', 'No comments on it.', '2023-03-04 22:56:24 ', 1, 1, 4),
-(21, 'Self-Quarantine Leave', '2023-02-11', '2023-02-18', 'This is just a demo condition for testing purpose!!', '2023-02-10 16:05:30', 'No comments!!', '2023-02-10 21:37:15 ', 1, 1, 8);
+(21, 'Self-Quarantine Leave', '2023-02-11', '2023-02-18', 'This is just a demo condition for testing purpose!!', '2023-02-10 16:05:30', 'No comments!!', '2023-02-10 21:37:15 ', 1, 1, 8),
+(22, 'Bereavement Leave', '2023-05-25', '2023-05-26', 'I seek for a leave of two days to attend the burial of ...', '2023-05-21 07:15:05', 'You leave application has been approved.', '2023-05-21 12:46:33 ', 1, 1, 9);
 
 -- --------------------------------------------------------
 
@@ -220,7 +248,7 @@ ALTER TABLE `tblleavetype`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbldepartments`
@@ -232,13 +260,13 @@ ALTER TABLE `tbldepartments`
 -- AUTO_INCREMENT for table `tblemployees`
 --
 ALTER TABLE `tblemployees`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tblleaves`
 --
 ALTER TABLE `tblleaves`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tblleavetype`
