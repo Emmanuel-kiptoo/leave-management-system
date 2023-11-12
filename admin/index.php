@@ -62,7 +62,7 @@
             <div class="login-box ptb--100">
                 <form name="signin" method="POST">
                     <div class="login-form-head">
-                        <h4>ADMIN SECTION</h4>
+                        <h4>HR Admin</h4>
                         <p>Fauzi Leave Management System</p>
                     </div>
                     <div class="login-form-body">
@@ -82,9 +82,6 @@
                         <div class="submit-btn-area">
                             <button id="form_submit" type="submit" name="signin">Submit <i class="ti-arrow-right"></i></button>
                             
-                        </div>
-                        <div class="form-footer text-center mt-5">
-                            <p class="text-muted"><a href="../index.php"><i class="ti-arrow-left"></i> Go Back</a></p>
                         </div>
                     </div>
                 </form>

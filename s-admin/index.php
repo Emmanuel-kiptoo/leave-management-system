@@ -62,7 +62,7 @@
             <div class="login-box ptb--100">
                 <form name="signin" method="POST">
                     <div class="login-form-head">
-                        <h4>SUPER ADMIN</h4>
+                        <h4>ICT Admin</h4>
                         <p>Fauzi Leave Management System</p>
                     </div>
                     <div class="login-form-body">

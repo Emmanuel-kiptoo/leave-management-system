@@ -103,9 +103,6 @@
                         <div class="submit-btn-area">
                             <button id="form_submit" type="submit" name="signin">Login <i class="ti-arrow-right"></i></button>
                         </div>
-                        <div class="form-footer text-center mt-5">
-                            <p class="text-muted"><a href="admin/index.php">Navigate to Admin Section</a></p>
-                        </div>
                     </div>
                 </form>
             </div>
